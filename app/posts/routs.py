@@ -39,8 +39,8 @@ def show_messages_endpoint():
     if request.method == "GET":
         lat = request.args.get('lat')
         lon = request.args.get('lon')
-        show_all = False
-        want_json = False
+        show_all = request.args.get('all')
+        want_json = request.args.get('json')
 
         if not(lat or lon):
             return render_template("get_location.html")
@@ -54,13 +54,11 @@ def show_messages_endpoint():
     else:
         return jsonify("Undefined Method Request" + str(request.method))
     
-    # global tweet_queryset
     Cache.tweet_queryset = Tweet.query.order_by(
         func.ST_Distance(
             Tweet.location, func.Geometry(func.ST_GeomFromText('POINT({} {})'.format(lat, lon), 0))
         )
     )
-
     if show_all:
         if want_json:
             return jsonify(
@@ -78,6 +76,7 @@ def show_messages_endpoint():
 
     else:
         if want_json:
+            print("Here is passed")
             return redirect(url_for("post_blueprint.show_pagination_endpoint", page_no= 1, json= True))
         else:
             return redirect(f"{request.url}/1")

@@ -20,16 +20,22 @@
         </div>
         {% endfor %}
         
-        {% if tweets.has_next %}
-        <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= page) }}"></a>
-        {% for page in tweets.iter_pages() %}
-            {% if page %}
-            <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= page) }}"> {{ page }}</a>
-            {% else %}
-            ...
-            {% endif %}
-        {% endfor%}
+        {% if tweets.has_prev %}
+        <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= tweets.prev_num) }}">Previous</a>
+        {% endif %}
 
+        {% for page in tweets.iter_pages() %}
+        {% if page %}
+        <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= page) }}"> {{ page }}</a>
+        {% else %}
+        ...
+        {% endif %}
+        {% endfor%}
+        
+        {% if tweets.has_next %}
+        <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= tweets.next_num) }}">Next</a>
+        {% endif %}
+        
     </div>
 
 </body>

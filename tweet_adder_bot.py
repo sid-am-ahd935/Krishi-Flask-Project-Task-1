@@ -1,7 +1,6 @@
 import requests
 import random
 
-url = "http://127.0.0.1:5000/posts"
 url = 'http://127.0.0.1:5000/posts/'
 
 def post_tweet():

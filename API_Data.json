@@ -1,0 +1,294 @@
+[
+  {
+    "Testing Response From": "get_weather",
+    "Result Response": {
+      "base": "stations",
+      "clouds": {
+        "all": 100
+      },
+      "cod": 200,
+      "coord": {
+        "lat": 74,
+        "lon": 142
+      },
+      "dt": 1649807858,
+      "id": 0,
+      "main": {
+        "feels_like": 250.91,
+        "grnd_level": 1028,
+        "humidity": 90,
+        "pressure": 1028,
+        "sea_level": 1028,
+        "temp": 257.91,
+        "temp_max": 257.91,
+        "temp_min": 257.91
+      },
+      "name": "",
+      "sys": {
+        "sunrise": 1649786725,
+        "sunset": 1649847567
+      },
+      "timezone": 36000,
+      "visibility": 1294,
+      "weather": [
+        {
+          "description": "overcast clouds",
+          "icon": "04d",
+          "id": 804,
+          "main": "Clouds"
+        }
+      ],
+      "wind": {
+        "deg": 45,
+        "gust": 4.41,
+        "speed": 4.08
+      }
+    }
+  },
+  {
+    "Testing Response From": "post_message",
+    "Result Response": "success"
+  },
+  {
+    "Testing Response From": "get_posts",
+    "Result Response": {
+      "Page Number From JSON Bot": 4,
+      "lat": 19,
+      "lon": 61,
+      "Point(lat=65 & lon=-35)": {
+        "current_page_tweets": [
+          {
+            "id": 11,
+            "lattitude": 1.0,
+            "longitude": 1.0,
+            "message": "Remeber this list is ordered by nearby tweets, and not date or time.",
+            "timestamp": "4 Hours Ago"
+          },
+          {
+            "id": 72,
+            "lattitude": 18.0,
+            "longitude": 85.0,
+            "message": "Any post can be seen by any location.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 76,
+            "lattitude": 29.587,
+            "longitude": 86.59,
+            "message": "Dummy Message",
+            "timestamp": "Yesterday"
+          },
+          {
+            "id": 55,
+            "lattitude": -29.0,
+            "longitude": 43.0,
+            "message": "This is a flask website.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 10,
+            "lattitude": 20.0,
+            "longitude": 90.0,
+            "message": "Now making a web posting bot",
+            "timestamp": "4 Hours Ago"
+          },
+          {
+            "id": 6,
+            "lattitude": 10.0,
+            "longitude": 90.0,
+            "message": "Third!!!",
+            "timestamp": "6 Hours Ago"
+          },
+          {
+            "id": 7,
+            "lattitude": 30.0,
+            "longitude": 90.0,
+            "message": "Forth One!!!",
+            "timestamp": "6 Hours Ago"
+          },
+          {
+            "id": 4,
+            "lattitude": 30.0,
+            "longitude": 90.0,
+            "message": "First Post Here!!!",
+            "timestamp": "6 Hours Ago"
+          },
+          {
+            "id": 43,
+            "lattitude": 70.0,
+            "longitude": 10.0,
+            "message": "This post is made by 'Tweet Adder Bot'.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 59,
+            "lattitude": 4.0,
+            "longitude": 100.0,
+            "message": "This post is made by 'Tweet Adder Bot'.",
+            "timestamp": "3 Hours Ago"
+          }
+        ],
+        "next": "http://127.0.0.1:5000/posts/show/3?json=True",
+        "page": 2,
+        "prev": "http://127.0.0.1:5000/posts/show/1?json=True",
+        "total_pages": 9
+      },
+      "Point(lat=-56 & lon=134)": {
+        "current_page_tweets": [
+          {
+            "id": 28,
+            "lattitude": 64.0,
+            "longitude": -5.0,
+            "message": "This post is made by 'Tweet Adder Bot'.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 19,
+            "lattitude": 36.0,
+            "longitude": -23.0,
+            "message": "Any post can be seen by any location.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 36,
+            "lattitude": 54.0,
+            "longitude": 96.0,
+            "message": "There is no filter added for limiting posts by distance.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 37,
+            "lattitude": 18.0,
+            "longitude": -26.0,
+            "message": "Thanks for viewing this website.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 71,
+            "lattitude": -47.0,
+            "longitude": 37.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 57,
+            "lattitude": 88.0,
+            "longitude": 45.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 54,
+            "lattitude": 27.0,
+            "longitude": -29.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 75,
+            "lattitude": 81.0,
+            "longitude": 76.0,
+            "message": "Enter location coordinates wisely.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 77,
+            "lattitude": 87.943082494,
+            "longitude": 60.23981038,
+            "message": "Is this working?",
+            "timestamp": "Yesterday"
+          },
+          {
+            "id": 20,
+            "lattitude": -16.0,
+            "longitude": -22.0,
+            "message": "Tweets are sorted by location not time.",
+            "timestamp": "3 Hours Ago"
+          }
+        ],
+        "next": "http://127.0.0.1:5000/posts/show/4?json=True",
+        "page": 3,
+        "prev": "http://127.0.0.1:5000/posts/show/2?json=True",
+        "total_pages": 9
+      },
+      "Point(lat=19 & lon=61)": {
+        "current_page_tweets": [
+          {
+            "id": 8,
+            "lattitude": 92.0,
+            "longitude": 35.0,
+            "message": "Another Post!",
+            "timestamp": "5 Hours Ago"
+          },
+          {
+            "id": 50,
+            "lattitude": -54.0,
+            "longitude": 28.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 65,
+            "lattitude": -14.0,
+            "longitude": 112.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 12,
+            "lattitude": -59.0,
+            "longitude": 56.0,
+            "message": "Enter location coordinates wisely",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 47,
+            "lattitude": 83.0,
+            "longitude": 91.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 29,
+            "lattitude": -22.0,
+            "longitude": 110.0,
+            "message": "This post is made by 'Tweet Adder Bot'.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 68,
+            "lattitude": -17.0,
+            "longitude": 113.0,
+            "message": "Any post can be seen by any location.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 67,
+            "lattitude": 13.0,
+            "longitude": -50.0,
+            "message": "Any suggestions on improving this websites backend a little? No frontend improvement can be done currently.;]",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 53,
+            "lattitude": -64.0,
+            "longitude": 78.0,
+            "message": "Enter location coordinates wisely.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 18,
+            "lattitude": -57.0,
+            "longitude": -15.0,
+            "message": "Tweets are sorted by location not time.",
+            "timestamp": "3 Hours Ago"
+          }
+        ],
+        "next": "http://127.0.0.1:5000/posts/show/5?json=True",
+        "page": 4,
+        "prev": "http://127.0.0.1:5000/posts/show/3?json=True",
+        "total_pages": 9
+      }
+    }
+  }
+]
