@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <h1>Input the Lattitude and Logitude Coordinates for the Weather API</h1>
+    <form action=" {{ url_for('weather_blueprint.results_endpoint')}} " method="post">
+        Location Lattitude: <input type="tel" name="lat">   Location Longitude: <input type="text" name="lon"> <br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

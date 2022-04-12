@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page {{ tweets.page }} | Tweets</title>
+</head>
+<body>
+    
+    <div class="center">
+        {% for tweet in tweets.items %}
+        <div class="center">
+            <p>
+                {{ tweet.msg }} <br> 
+                at Location({{ int(point(tweet.location).x) }}, {{ int(point(tweet.location).y) }}) <br>
+                posted {{ beautify_time(tweet.epoch_time, time()) }}
+            </p>
+            <hr>
+        </div>
+        {% endfor %}
+        
+        {% if tweets.has_next %}
+        <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= page) }}"></a>
+        {% for page in tweets.iter_pages() %}
+            {% if page %}
+            <a href="{{ url_for('post_blueprint.show_pagination_endpoint', page_no= page) }}"> {{ page }}</a>
+            {% else %}
+            ...
+            {% endif %}
+        {% endfor%}
+
+    </div>
+
+</body>
+</html>
