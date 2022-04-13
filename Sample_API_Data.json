@@ -1,0 +1,116 @@
+[
+  {
+    "Testing Response From": "get_weather",
+    "Result Response": {
+      "base": "stations",
+      "main": {
+        "feels_like": 230.88,
+        "grnd_level": 963,
+        "humidity": 84,
+        "pressure": 980,
+        "sea_level": 980,
+        "temp": 237.88,
+        "temp_max": 237.88,
+        "temp_min": 237.88
+      },
+      "weather": [
+        {
+          "description": "clear sky",
+          "icon": "01n",
+          "id": 800,
+          "main": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "Testing Response From": "post_message",
+    "Result Response": "success"
+  },
+  {
+    "Testing Response From": "get_posts",
+    "Result Response": {
+      "Page Number From JSON Bot": 1,
+      "lat": 72,
+      "lon": 100,
+      "Point(lat=72 & lon=100)": {
+        "current_page_tweets": [
+          {
+            "id": 5,
+            "lattitude": 20.0,
+            "longitude": 50.0,
+            "message": "Second Post!!!",
+            "timestamp": "6 Hours Ago"
+          },
+          {
+            "id": 9,
+            "lattitude": 32.0,
+            "longitude": 21.0,
+            "message": "Yet Another Post!!!",
+            "timestamp": "5 Hours Ago"
+          },
+          {
+            "id": 61,
+            "lattitude": -8.0,
+            "longitude": 49.0,
+            "message": "These are tweets not posts.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 42,
+            "lattitude": -7.0,
+            "longitude": 54.0,
+            "message": "This is a flask website.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 78,
+            "lattitude": 7.0,
+            "longitude": 74.0,
+            "message": "This message is meant to be stored in JSON API examples file.",
+            "timestamp": "2 Hours Ago"
+          },
+          {
+            "id": 84,
+            "lattitude": 36.0,
+            "longitude": 77.0,
+            "message": "JSON API Bot to the rescue.",
+            "timestamp": "An Hour Ago"
+          },
+          {
+            "id": 80,
+            "lattitude": 46.0,
+            "longitude": 8.0,
+            "message": "JSON API Bot to the rescue.",
+            "timestamp": "An Hour Ago"
+          },
+          {
+            "id": 79,
+            "lattitude": 37.0,
+            "longitude": 2.0,
+            "message": "This message is meant to be stored in JSON API examples file.",
+            "timestamp": "An Hour Ago"
+          },
+          {
+            "id": 39,
+            "lattitude": 3.0,
+            "longitude": 2.0,
+            "message": "This is a flask website.",
+            "timestamp": "3 Hours Ago"
+          },
+          {
+            "id": 49,
+            "lattitude": -15.0,
+            "longitude": 64.0,
+            "message": "These are tweets not posts.",
+            "timestamp": "3 Hours Ago"
+          }
+        ],
+        "next": "http://127.0.0.1:5000/posts/show/2?json=True",
+        "page": 1,
+        "prev": null,
+        "total_pages": 9
+      }
+    }
+  }
+]
